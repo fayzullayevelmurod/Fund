@@ -3,12 +3,13 @@
 
 
 let swiper = new Swiper(".homeSwiper", {
+    spaceBetween: 10,
     pagination: {
       el: ".swiper-pagination",
     },
     breakpoints: {
-        300: {
-          slidesPerView: 2.20,
+        320: {
+          slidesPerView: 2.15,
           spaceBetween: 10,
         },
         576: {

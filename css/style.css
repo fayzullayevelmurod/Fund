@@ -317,7 +317,9 @@ header .language .active {
     display: none;
   }
   header .burger_btn {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .home {
     height: 350px;
@@ -337,8 +339,14 @@ header .language .active {
   .news .news_card {
     width: 100%;
   }
+  .news .news_card_img {
+    height: auto;
+  }
   .news .news_card_img data {
     font-size: 12px;
+  }
+  .news .news_card_img .main_img {
+    height: auto;
   }
   .news h6 {
     font-size: 14px;
@@ -393,5 +401,19 @@ header .language .active {
   .home .home_bg_media {
     display: block;
     width: 100%;
+    height: 240px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .news {
+    margin-top: 100px;
+  }
+  .news .news_card_img {
+    height: auto;
+  }
+  .news .news_card_img .main_img {
+    border-radius: 14px;
+    width: 100%;
+    height: auto;
   }
 }/*# sourceMappingURL=style.css.map */
