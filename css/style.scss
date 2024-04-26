@@ -95,7 +95,8 @@ header {
     top: 20px;
     width: 100%;
 
-    .main_container {
+    .header_in {
+        position: relative;
         border-radius: 20px;
         background: rgb(36, 100, 197);
         padding: 10px 14px;
@@ -112,6 +113,11 @@ header {
     }
 
     .nav_link {
+        width: 404px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
         @include flex-center();
         gap: 12px;
         padding: 6px 12px;
@@ -119,6 +125,7 @@ header {
         background: rgb(255, 255, 255);
 
         a {
+            padding: 6px 10px;
             color: rgb(36, 100, 197);
             font-size: 18px;
             font-weight: 500;
@@ -147,6 +154,69 @@ header {
     }
 }
 // header
+
+// home
+.home {
+    height: 500px;
+
+    .home_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .home_bg_media {
+        display: none;
+    }
+
+    .main_container {
+        transform: translateY(-70px)
+    }
+
+    .slider_card {
+        position: relative;
+
+        .slider_img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+    }
+
+    .slider_logo {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    h6 {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        position: static;
+    }
+
+    .swiper-pagination-bullet {
+        background: rgb(193, 191, 191);
+        margin: 0 5px;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: rgb(179, 179, 179);
+    }
+}
+// home
 
 // news
 .news {
@@ -177,6 +247,7 @@ header {
         .main_img {
             width: 100%;
             height: 200px;
+            object-fit: cover;
         }
 
         .card_img_in {

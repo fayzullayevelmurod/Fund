@@ -62,7 +62,8 @@ header {
   top: 20px;
   width: 100%;
 }
-header .main_container {
+header .header_in {
+  position: relative;
   border-radius: 20px;
   background: rgb(36, 100, 197);
   padding: 10px 14px;
@@ -77,6 +78,11 @@ header .burger_btn {
   display: none;
 }
 header .nav_link {
+  width: 404px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -85,6 +91,7 @@ header .nav_link {
   background: rgb(255, 255, 255);
 }
 header .nav_link a {
+  padding: 6px 10px;
   color: rgb(36, 100, 197);
   font-size: 18px;
   font-weight: 500;
@@ -106,6 +113,59 @@ header .language a {
 header .language .active {
   color: rgb(255, 255, 255);
   background: rgb(36, 100, 197);
+}
+
+.home {
+  height: 500px;
+}
+.home .home_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home .home_bg_media {
+  display: none;
+}
+.home .main_container {
+  transform: translateY(-70px);
+}
+.home .slider_card {
+  position: relative;
+}
+.home .slider_card .slider_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.home .slider_logo {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.home h6 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+.home .swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: static;
+}
+.home .swiper-pagination-bullet {
+  background: rgb(193, 191, 191);
+  margin: 0 5px;
+}
+.home .swiper-pagination-bullet-active {
+  background: rgb(179, 179, 179);
 }
 
 .news .news_cards {
@@ -130,6 +190,8 @@ header .language .active {
 .news .news_card_img .main_img {
   width: 100%;
   height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .news .news_card_img .card_img_in {
   position: absolute;
@@ -213,4 +275,123 @@ header .language .active {
   padding: 12px 20px;
   border-radius: 6px;
   background: rgb(234, 240, 250);
+}
+
+@media only screen and (max-width: 1200px) {
+  header .header_logo {
+    display: none;
+  }
+  header .header_media_logo {
+    display: block;
+  }
+  .home .main_container {
+    transform: translateY(-100px);
+  }
+  .news {
+    margin-top: 150px;
+  }
+}
+@media only screen and (max-width: 993px) {
+  header {
+    top: 15px;
+  }
+  header .header_in {
+    padding: 12px 18px;
+  }
+  header .language {
+    background-color: transparent;
+    padding: 0;
+  }
+  header .language a {
+    padding: 4px 10px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 17px;
+  }
+  header .language .active {
+    color: rgb(36, 100, 197);
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+  }
+  header .nav_link {
+    display: none;
+  }
+  header .burger_btn {
+    display: block;
+  }
+  .home {
+    height: 350px;
+  }
+  .home .home_img {
+    height: 350px;
+  }
+  .home .main_container {
+    transform: translateY(-90px);
+  }
+  .news {
+    margin-top: 100px;
+  }
+  .news .news_cards {
+    margin: 0 0 30px;
+  }
+  .news .news_card {
+    width: 100%;
+  }
+  .news .news_card_img data {
+    font-size: 12px;
+  }
+  .news h6 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .news p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .news .news_card_btn {
+    margin-bottom: 10px;
+  }
+  .news .more_btn {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .home {
+    height: 240px;
+  }
+  .home .main_container {
+    transform: translateY(-50px);
+  }
+  .home .homeSwiper {
+    overflow: visible;
+  }
+  .home .home_img {
+    height: 240px;
+  }
+  .home .slider_logo {
+    width: 34px;
+    height: 34px;
+  }
+  .home .slider_card {
+    height: 98px;
+  }
+  .home h6 {
+    bottom: 14px;
+    left: 14px;
+    right: 14px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .news .news_card_img .main_img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .home .home_img {
+    display: none;
+  }
+  .home .home_bg_media {
+    display: block;
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

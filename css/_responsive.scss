@@ -1,3 +1,164 @@
+@media only screen and (max-width: 1200px) {
+    header {
+        .header_logo {
+            display: none;
+        }
+
+        .header_media_logo {
+            display: block;
+        }
+    }
+
+    .home {
+        .main_container {
+            transform: translateY(-100px);
+        }
+    }
+
+    .news {
+        margin-top: 150px;
+    }
+
+}
+
 @media only screen and (max-width: 993px) {
+    header {
+        top: 15px;
+
+        .header_in {
+            padding: 12px 18px;
+        }
+
+        .language {
+            background-color: transparent;
+            padding: 0;
+
+            a {
+                padding: 4px 10px;
+                color: rgb(255, 255, 255);
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            .active {
+                color: rgb(36, 100, 197);
+                border-radius: 6px;
+                background: rgb(255, 255, 255);
+            }
+        }
+
+        .nav_link {
+            display: none;
+        }
+
+        .burger_btn {
+            display: block;
+        }
+    }
+
+    .home {
+        height: 350px;
+
+        .home_img {
+            height: 350px;
+        }
+
+        .main_container {
+            transform: translateY(-90px);
+        }
+    }
+
+    .news {
+        margin-top: 100px;
+
+        .news_cards {
+            margin: 0 0 30px;
+        }
+
+        .news_card {
+            width: 100%;
+        }
+
+        .news_card_img  {
+            data {
+                font-size: 12px;
+            }
+        }
+
+        h6 {
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        .news_card_btn {
+            margin-bottom: 10px;
+        }
+
+        .more_btn {
+            font-size: 16px;
+        }
+    }
     
+}
+
+@media only screen and (max-width: 768px) {
+    .home {
+        height: 240px;
+
+        .main_container {
+            transform: translateY(-50px);
+        }
+
+        .homeSwiper  {
+            overflow: visible;
+        }
+
+        .home_img {
+            height: 240px;
+        }
+
+        .slider_logo {
+            width: 34px;
+            height: 34px;
+        }
+
+        .slider_card {
+            height: 98px;
+        }
+
+        h6 {
+            bottom: 14px;
+            left: 14px;
+            right: 14px;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    .news {
+        .news_card_img  {
+            .main_img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .home {
+        .home_img {
+            display: none;
+        }
+
+        .home_bg_media {
+            display: block;
+            width: 100%;
+        }
+    }
 }
