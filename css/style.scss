@@ -92,6 +92,13 @@ address {
     margin: 0 auto;
 }
 
+.main_title {
+    color: rgb(0, 0, 87);
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
 // header
 header {
     position: fixed;
@@ -547,6 +554,129 @@ header {
     }
 }
 // read_also
+
+// about
+.about {
+    margin: 190px 0 100px;
+
+    .main_container {
+        display: flex;
+        gap: 20px;
+    }
+
+    img {
+        max-width: 727px;
+    }
+
+    .main_title {
+        margin-bottom: 30px;
+    }
+
+    p {
+        color: rgb(77, 77, 77);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 125%;
+        margin-top: 10px;
+    }
+}
+// about
+
+// contact
+.contact {
+    margin-bottom: 100px;
+
+    .main_title {
+        margin-bottom: 30px;
+    }
+
+    .contact_blocks {
+        @include flex-center();
+        gap: 40px;
+
+        a, address {
+            @include flex-center();
+            gap: 6px;
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        a,
+        address,
+        span {
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 125%;
+        }
+    }
+}
+// contact
+
+// structure
+.structure {
+    .main_title {
+        margin-bottom: 40px;
+    }
+
+    .fonda_blocks_title {
+        @include flex-center();
+        gap: 20px;
+        margin-bottom: 30px;
+        max-width: 610px;
+
+        h5 {
+            color: rgb(36, 100, 197);
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 125%;
+            white-space: nowrap;
+        }
+
+        .line {
+            height: 1px;
+            background-color: rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+    }
+
+    .fonda_blocks_content {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 47px;
+
+        .fonda_user {
+            max-width: 173px;
+            margin: 10px 8px;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 173px;
+                height: 173px;
+            }
+
+            span {
+                color: rgb(77, 77, 77);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 125%;
+                margin: 14px 0 4px;
+            }
+
+            h6 {
+                color: rgb(0, 0, 0);
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 125%;
+            }
+        }
+    }
+}
+// structure
 
 
 
