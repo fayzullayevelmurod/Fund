@@ -346,7 +346,7 @@ header .media_nav_link a {
 }
 .new .last_news {
   position: sticky;
-  top: 0;
+  top: 100px;
   width: 300px;
 }
 .new .last_news h6 {
