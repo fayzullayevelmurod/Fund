@@ -203,6 +203,7 @@ header .media_nav_link a {
   position: absolute;
   top: 10px;
   right: 10px;
+  z-index: 3;
 }
 .home h6 {
   position: absolute;
