@@ -31,9 +31,29 @@
         }
     }
 
+    .about {
+        .main_container {
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+
+        .about_img {
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
 }
 
 @media only screen and (max-width: 993px) {
+
+    .main_title {
+        font-size: 32px;
+        line-height: 130%;
+    }
+
     header {
         top: 15px;
 
@@ -185,6 +205,136 @@
             line-height: 27px;
         }
     }
+
+    .about {
+        margin: 130px 0 70px;
+
+        .main_title {
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;    
+            line-height: 125%;
+        }
+    }
+
+    .contact {
+        margin-bottom: 70px;
+
+        .main_title {
+            margin-bottom: 20px;
+        }
+
+        .contact_blocks {
+            gap: 16px 40px;
+
+            a,address ,span {
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                font-size: 16px;
+                line-height: 125%;
+            }
+
+            address {
+                align-items: start;
+            }
+        }
+    }
+
+    .structure {
+        .main_title {
+            margin-bottom: 20px;
+        }
+
+        .fonda_blocks_title {
+            margin-bottom: 25px;
+            gap: 10px;
+
+            h5 {
+                font-size: 18px;
+                line-height: 125%;
+            }
+        }
+
+        .fonda_blocks_content {
+            gap: 15px;
+
+            .fonda_user {
+                max-width: 152px;
+                margin: 6px;
+                width: calc(100% / 2);
+
+                img {
+                    margin: 0 auto;
+                    width: 140px;
+                    height: 140px;
+                }
+
+                span {
+                    margin: 8px 0 2px;
+                    font-size: 12px;
+                    line-height: 125%;
+                }
+
+                h6 {
+                    font-size: 14px;
+                    line-height: 125%;
+                }
+            }
+        }
+    }
+
+    .report {
+        margin-bottom: 70px;
+
+        .main_title {
+            margin-bottom: 20px;
+
+            h6 {
+                font-size: 18px;
+                line-height: 125%;
+            }
+        }
+
+        ul {
+            gap: 14px;
+
+            a {
+                font-size: 16px;
+            }
+        }
+
+        .report_blocks {
+            flex-direction: column;
+        }
+
+        .report_block {
+            width: 100%;
+        }
+    }
+
+    .document {
+        margin-bottom: 70px;
+
+        .main_title {
+            margin-bottom: 20px;
+        }
+
+        .document_in {
+            flex-direction: column;
+            align-items: start;
+            gap: 15px;
+        }
+
+        a {
+            font-size: 16px;
+            line-height: 125%;
+        }
+    }
     
 }
 
@@ -278,6 +428,13 @@
 
         .last_news_Swiper {
             overflow: visible;
+        }
+    }
+
+    .contact {
+        .contact_blocks {
+            flex-direction: column;
+            align-items: start;
         }
     }
 }

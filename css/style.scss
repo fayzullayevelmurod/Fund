@@ -596,7 +596,9 @@ header {
         gap: 40px;
 
         a, address {
-            @include flex-center();
+            display: flex;
+            align-items: center;
+            
             gap: 6px;
 
             img {
