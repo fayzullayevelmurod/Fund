@@ -81,6 +81,7 @@ header .header_in {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: 0.2s ease;
 }
 header .header_media_logo {
   display: none;
@@ -124,6 +125,35 @@ header .language a {
 header .language .active {
   color: rgb(255, 255, 255);
   background: rgb(36, 100, 197);
+}
+header .header_in.active {
+  border-radius: 20px 20px 0 0;
+}
+header .media_menu {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  transition: 0.2s ease;
+}
+header .media_menu.active {
+  height: 115px;
+}
+header .media_nav_link {
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+  background: rgb(36, 100, 197);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+header .media_nav_link a {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
 }
 
 .home {
@@ -660,6 +690,11 @@ header .language .active {
     max-width: 100%;
   }
 }
+@media only screen and (min-width: 993px) {
+  .media_menu {
+    display: none;
+  }
+}
 @media only screen and (max-width: 993px) {
   .main_title {
     font-size: 32px;
@@ -822,12 +857,12 @@ header .language .active {
     line-height: 125%;
   }
   .structure .fonda_blocks_content {
+    margin-bottom: 30px;
     gap: 15px;
   }
   .structure .fonda_blocks_content .fonda_user {
     max-width: 152px;
     margin: 6px;
-    width: 50%;
   }
   .structure .fonda_blocks_content .fonda_user img {
     margin: 0 auto;
@@ -949,5 +984,12 @@ header .language .active {
   .contact .contact_blocks {
     flex-direction: column;
     align-items: start;
+  }
+  .structure .fonda_blocks_content .fonda_user {
+    width: calc(50% - 20px);
+    max-width: auto;
+  }
+  .structure .fonda_blocks_content .fonda_user img {
+    height: auto;
   }
 }/*# sourceMappingURL=style.css.map */

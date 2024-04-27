@@ -47,6 +47,12 @@
 
 }
 
+@media only screen and (min-width: 993px) {
+    .media_menu {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 993px) {
 
     .main_title {
@@ -261,12 +267,12 @@
         }
 
         .fonda_blocks_content {
+            margin-bottom: 30px;
             gap: 15px;
 
             .fonda_user {
                 max-width: 152px;
                 margin: 6px;
-                width: calc(100% / 2);
 
                 img {
                     margin: 0 auto;
@@ -435,6 +441,19 @@
         .contact_blocks {
             flex-direction: column;
             align-items: start;
+        }
+    }
+
+    .structure {
+        .fonda_blocks_content {
+            .fonda_user {
+                width: calc(100% / 2 - 20px);
+                max-width: auto;
+
+                img {
+                    height: auto;
+                }
+            }
         }
     }
 }
